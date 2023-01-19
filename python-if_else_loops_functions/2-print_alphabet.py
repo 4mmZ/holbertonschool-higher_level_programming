@@ -1,2 +1,5 @@
 #!/usr/bin/python3
-print("{var}".format(var = "abcdfghijklmnoprstuvwxyz"))
+import string
+
+for ch in string.ascii_lowercase:
+    print("{}".format(ch), end="")
