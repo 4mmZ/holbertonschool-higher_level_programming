@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def uppercase(str):
     ouput = ''
     for ch in str:
@@ -10,4 +11,3 @@ def uppercase(str):
         else:
             ouput = ouput+ch
     print("{}".format(ouput))
-
