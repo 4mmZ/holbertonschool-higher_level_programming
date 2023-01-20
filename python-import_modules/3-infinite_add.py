@@ -6,4 +6,3 @@ if __name__ == "__main__":
     for n in range(1, len(args)):
         total += int(args[n])
     print("{}".format(total))
-
