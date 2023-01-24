@@ -6,6 +6,5 @@ def print_matrix_integer(matrix=[[]]):
         for i in n:
             if matrix == 3:
                 break
-            print("{}".format(i), end=" ")
+            print("{:d}".format(i), end=" ")
         print ("")
-
