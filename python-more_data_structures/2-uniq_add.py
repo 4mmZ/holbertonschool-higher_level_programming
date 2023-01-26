@@ -2,5 +2,5 @@
 
 
 def uniq_add(my_list=[]):
-    aux = [i for i in my_list if not i == my_list[i] ]
-    return sum(aux) + 1
+    aux = list(set(my_list))
+    return sum(aux)
