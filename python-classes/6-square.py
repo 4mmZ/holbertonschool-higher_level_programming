@@ -40,6 +40,8 @@ class Square:
         if iterator == 0:
             print("\n", end="")
             return
+        for b in range(my_tuple[1]):
+            print()
         for i in range(iterator):
             for a in range(my_tuple[0]):
                 print(" ", end="")
