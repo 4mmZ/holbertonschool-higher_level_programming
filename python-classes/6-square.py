@@ -13,7 +13,7 @@ class Square:
         self.__position = position
         aux = self.__position
 
-        if aux[0] < 0 or aux[1] < 0:
+        if int(aux[0]) < 0 or int(aux[1]) < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         if len(aux) < 2:
             raise TypeError("position must be a tuple of 2 positive integers")
