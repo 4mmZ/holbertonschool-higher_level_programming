@@ -1,0 +1,46 @@
+#!/usr/bin/python3
+"""
+Class Square
+"""
+
+
+class Square:
+    """
+    class
+    """
+    def __init__(self, size=0, position=(0, 0)):
+        self.__size = size
+        self.__position = position
+
+    @property
+    def size(self):
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        if (type(value) is not int):
+            raise TypeError("size must be an integer")
+        self.__size = value
+
+    def my_print(self):
+        iterator = self.__size
+        my_tuple = self.__position
+        j = 0
+        i = 0
+        if iterator == 0:
+            print("\n", end="")
+            return
+        for i in range(iterator):
+            for a in range(my_tuple[0]):
+                print(" ", end="")
+            for j in range(iterator - 1):
+                print("#", end="")
+            print("#")
+
+    @property
+    def position(self):
+        return self.__position
+
+    @position.setter
+    def position(self, value):
+        self.__position = value
