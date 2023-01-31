@@ -26,7 +26,7 @@ class Square:
         j = 0
         i = 0
         if iterator == 0:
-            print("\n")
+            print("\n", end="")
             return
         for i in range(iterator):
             for j in range(iterator - 1):
