@@ -22,6 +22,10 @@ class Square:
             raise TypeError("size must be an integer")
         self.__size = value
 
+    def area(self):
+        area_aux = self.__size ** 2
+        return area_aux
+
     def my_print(self):
         iterator = self.__size
         my_tuple = self.__position
