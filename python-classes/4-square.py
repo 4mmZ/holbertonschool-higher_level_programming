@@ -22,8 +22,9 @@ class Square:
     @size.setter
     def size(self, value):
         if (type(value) is not int):
-            raise TypeError("size must be an integrer")
+            raise TypeError("size must be an integer")
         self.__size = value
+
     def area(self):
         area_aux = self.__size ** 2
         return area_aux
