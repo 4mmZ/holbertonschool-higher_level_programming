@@ -3,14 +3,20 @@
 doc
 """
 
+
 def text_indentation(text):
-    if type(text) != str:
+    """
+    doc
+    """
+    if type(text) is not str:
         raise TypeError("text must be a string")
-    new_text = ""
-    for char in text:
-        if char in ['?', '.', ':']:
-            new_text += char + "\n\n"
-        else:
-            new_text += char
-    for line in new_text.split("\n"):
-        print(line.strip(), end="")
+    indent = True
+    for spaces in text:
+        if spaces in ".:?":
+            print(spaces, end="\n\n")
+            indent = True
+        elif not indent or spaces != " ":
+            print(spaces, end="")
+            indent = False
+
+
