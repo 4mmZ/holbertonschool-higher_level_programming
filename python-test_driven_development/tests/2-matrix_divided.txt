@@ -25,3 +25,24 @@ Traceback (most recent call last):
 ...
 TypeError: Each row of the matrix must have the same size
 
+>>> matrix_divided(matrix, float('inf'))
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+>>> matrix_divided([[1, 2, 3], [4, 5, float('inf')]], 2)
+[[0.5, 1.0, 1.5], [2.0, 2.5, inf]]
+
+>>> matrix_divided([[1, 2, 3], [4, 5, float('NaN')]], 2)
+[[0.5, 1.0, 1.5], [2.0, 2.5, nan]]
+
+>>> matrix_divided([[1, 2, 3], [4, 5, float('NaN')]], float('NaN'))
+[[nan, nan, nan], [nan, nan, nan]]
+
+>>> matrix_divided([[1, 2, 3], [4, 5, float('NaN')]], float('inf'))
+[[0.0, 0.0, 0.0], [0.0, 0.0, nan]]
+
+>>> matrix_divided([[1, 2, 3], [4, 5, float('inf')]], float('NaN'))
+[[nan, nan, nan], [nan, nan, nan]]
+
+>>> matrix_divided([[1, 2, 3], [4, 5, float('inf')]], float('inf'))
+[[0.0, 0.0, 0.0], [0.0, 0.0, nan]]
+
