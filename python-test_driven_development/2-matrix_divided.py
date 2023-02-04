@@ -5,6 +5,9 @@ Doc
 
 
 def matrix_divided(matrix, div):
+    """
+    Doc
+    """
     if div == 0:
         raise ZeroDivisionError("division by zero")
     if type(div) is not int and type(div) is not float:
