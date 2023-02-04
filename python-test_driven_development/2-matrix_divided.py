@@ -15,9 +15,11 @@ def matrix_divided(matrix, div):
     for count, value in enumerate(matrix):
         if len(matrix) > 0:
             if len(matrix[count - 1]) != len(matrix[count]):
-                raise TypeError("Each row of the matrix must have the same size")
+                raise TypeError("Each row of the matrix \
+must have the same size")
         for i in value:
             if type(i) is not int and type(i) is not float:
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix \
+(list of lists) of integers/floats")
     matrix_div = [[round(x / div, 2) for x in list] for list in matrix]
     return matrix_div
