@@ -5,6 +5,9 @@ Doc
 
 
 def print_square(size):
+    """
+    Doc
+    """
     square = size
     if type(square) is not int:
         raise TypeError("size must be an integer")
