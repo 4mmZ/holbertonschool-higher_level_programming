@@ -18,6 +18,3 @@ def text_indentation(text):
         elif not indent or spaces != " ":
             print(spaces, end="")
             indent = False
-
-
-
