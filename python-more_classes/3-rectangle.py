@@ -24,6 +24,10 @@ class Rectangle:
     def __str__(self, width=0, height=0):
         high = self.__height
         large = self.__width
+        if high == 0:
+            return ""
+        if large == 0:
+            return ""
         for y in range(high):
             if y == 0:
                 pass
