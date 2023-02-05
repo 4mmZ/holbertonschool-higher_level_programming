@@ -36,6 +36,7 @@ class Rectangle:
             for x in range(large):
                 print("#", end="")
         return ""
+
     @property
     def height(self):
         return self.__height
