@@ -4,7 +4,7 @@
 
 def write_file(filename="", text=""):
     """ Func """
-    with open(filename) as f:
+    with open(filename, 'w') as f:
         """ instance when the file is opened by the function"""
         lines = f.write(text)
         return lines
