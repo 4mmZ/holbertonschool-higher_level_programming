@@ -21,3 +21,4 @@ class Student:
     def reload_from_json(self, json):
         if json == {}:
             self.__dict__ = json
+        self.__dict__ = json
