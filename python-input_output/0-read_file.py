@@ -7,4 +7,4 @@ def read_file(filename=""):
     with open(filename) as f:
         """ instance when the file is opened by the function"""
         lines = f.read()
-        print(lines)
+        print(lines, end="")
