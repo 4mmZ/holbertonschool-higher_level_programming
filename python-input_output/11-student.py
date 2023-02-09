@@ -11,7 +11,7 @@ class Student:
 
     def to_json(self, attrs=None):
         returned_list = {}
-        if not attrs is None:
+        if attrs is not None:
             for i in attrs:
                 if hasattr(self, i):
                     returned_list[i] = getattr(self, i)
@@ -19,4 +19,5 @@ class Student:
         return self.__dict__
 
     def reload_from_json(self, json):
-        self.__dict__ = json
+        if json == {}:
+            self.__dict__ = json
