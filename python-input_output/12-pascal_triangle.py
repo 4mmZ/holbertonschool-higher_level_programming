@@ -3,6 +3,7 @@
 
 
 def pascal_triangle(n):
+    """ Func """
     if n <= 0:
         return []
     triangle = [[1]]
